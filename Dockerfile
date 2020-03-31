@@ -1,4 +1,6 @@
-FROM tensorflow/tensorflow:1.9.0-gpu-py3
+#FROM tensorflow/tensorflow:1.9.0-gpu-py3
+# !!!FROM tensorflow/tensorflow:1.12.3-gpu-py3
+FROM tensorflow/tensorflow:1.10.0-gpu-py3
 
 RUN pip install gpflow==1.3.0 && \
     pip install jupyter_contrib_nbextensions jupyter_nbextensions_configurator autopep8 && \
